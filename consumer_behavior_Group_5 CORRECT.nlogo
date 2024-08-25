@@ -69,8 +69,8 @@ end
 
 to go
   ask turtles [
-    let sum_influence_in sum [influence-out] of turtles in-radius 5
-    let patches-set patches in-radius 5 with [patch-type != 0]
+    let sum_influence_in sum [influence-out] of turtles in-radius x
+    let patches-set patches in-radius x with [patch-type != 0]
     if count patches-set > 0 [
       let patches-list []
       let motivation-list []
